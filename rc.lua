@@ -104,7 +104,7 @@ myawesomemenu = {
         items = { { "Awesome", myawesomemenu, beautiful.awesome_icon },
                   { "Open Terminal", "alacritty" },
                   { "Open Browser", "google-chrome" },
-                  { "Open Files", "dolphin" }
+                  { "Open Files", "nautilus" }
                 }
     })
 
