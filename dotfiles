@@ -1,0 +1,30 @@
+I really should start making a list of essential programs for me
+
+terminal
+files
+browser
+
+important utils
+xfce4-power-manager - power management/behaviors and brightness control
+lxqt-policykit (run with lxqt-policykit-agent)
+kmix - volume keys
+nitrogen - wallpaper control
+polybar - polybar lol
+picom jonaburg - have to make from git repo
+
+terminal utils - 
+zoxide - really fucking awesome directory navigation,
+ suuuuper easy, you can move laterally in literally 3 keypresses
+mc - file manager, probably really efficient
+tmux - idk if i'm going to use this much as I'm
+already in a tiling WM but it's cool, potentially super useful
+fzf - realllly nice finder, helps the theme script
+theme-selector script - find online, "terminal agnostic"
+rofi - best application switcher/launcher/menu/finder/thing of all, super awesome
+ - rofi-network-manager script
+starship prompt - really nice
+code - current ide, might try to switch to vim, who knows. I'll have to play with ricing it up first
+
+
+misc general pc utils
+eog - image viewer

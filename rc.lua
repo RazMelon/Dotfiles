@@ -57,7 +57,6 @@ editor = os.getenv("EDITOR") or "editor"
 editor_cmd = terminal .. " -e " .. editor
 
 -- Default modkey.
--- Usually, Mod4 is the key with a logo between Control and Alt.
 -- If you do not like this or do not have such a key,
 -- I suggest you to remap Mod4 to another key using xmodmap or other tools.
 -- However, you can use another modifier like Mod1, but it may interact with others.
@@ -81,6 +80,7 @@ awful.layout.layouts = {
     -- awful.layout.suit.corner.ne,
     -- awful.layout.suit.corner.sw,
     -- awful.layout.suit.corner.se,
+    -- Usually, Mod4 is the key with a logo between Control and Alt.
 }
 -- }}}
 
@@ -104,7 +104,7 @@ myawesomemenu = {
         items = { { "Awesome", myawesomemenu, beautiful.awesome_icon },
                   { "Open Terminal", "alacritty" },
                   { "Open Browser", "google-chrome" },
-                  { "Open Files", "dolphin" }
+                  { "Open Files", "nautilus" }
                 }
     })
 
@@ -328,7 +328,9 @@ globalkeys = gears.table.join(
     awful.key({modkey},   "r", function()
         awful.spawn.with_shell("rofi -show run &>> /tmp/rofi.log") end, 
         { description = "Activate Rofi run prompt (Commands)", group = "launcher" }),
-
+    awful.key({modkey},   "e", function()
+        awful.spawn.with_shell("nautilus") end,
+        { description = "Open Nautilus File Manager", group = "shortcuts" }),
     awful.key({ modkey }, "x",
               function ()
                   awful.prompt.run {
@@ -466,7 +468,7 @@ root.keys(globalkeys)
 awful.rules.rules = {
     -- All clients will match this rule.
     { rule = { },
-      properties = { border_width = beautiful.border_width,
+      properties = { border_width = 0,
                      border_color = beautiful.border_normal,
                      focus = awful.client.focus.filter,
                      raise = true,
@@ -600,3 +602,5 @@ client.connect_signal("request::manage", function(c)
         gears.shape.rounded_rect(cr, w, h, 12)
     end
 end)
+
+awful.spawn.with_shell ("bash /home/razmelon/dotfiles/autorun.sh", false)
