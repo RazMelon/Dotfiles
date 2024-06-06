@@ -596,7 +596,7 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 -- }}}
 
 --custom configs
-beautiful.useless_gap=16
+beautiful.useless_gap=8
 client.connect_signal("request::manage", function(c)
     c.shape = function(cr, w, h)
         gears.shape.rounded_rect(cr, w, h, 12)
