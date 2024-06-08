@@ -1,5 +1,8 @@
 # Created by newuser for 5.9
  eval "$(zoxide init zsh)"
+# zsh remaps
+alias zz='z -'
+
  eval "$(starship init zsh)"
 
  # theme.sh spacedust
