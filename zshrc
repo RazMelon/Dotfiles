@@ -18,3 +18,12 @@ export PATH="$PATH:/home/razmelon/.local/bin"
 export CC=clang
 export CFLAGS="-fsanitize=integer -fsanitize=undefined -ggdb3 -O0 -std=c11 -Wall -Werror -Wextra -Wno-sign-compare -Wshadow"
 export LDLIBS="-lcrypt -lcs50 -lm"
+
+#spotify startup
+alias spotify='cd ~/.cargo/bin && ./spotify_player'
+
+#tmux aliases
+alias td='tmux detach'
+alias ta='tmux attach'
+
+PATH="$PATH":"$HOME/.local/bin/scripts/"
