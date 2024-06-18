@@ -326,7 +326,7 @@ globalkeys = gears.table.join(
 
         -- Prompt
     awful.key({modkey},   "r", function()
-        awful.spawn.with_shell("rofi -show run &>> /tmp/rofi.log") end, 
+        awful.spawn.with_shell("~/.config/rofi/scripts/launcher_t1 &>> /tmp/rofi.log") end, 
         { description = "Activate Rofi run prompt (Commands)", group = "launcher" }),
     awful.key({modkey},   "e", function()
         awful.spawn.with_shell("nautilus") end,
@@ -346,7 +346,7 @@ globalkeys = gears.table.join(
         --    awful.key({ modkey }, "p", function() menubar.show() end,
         --              {description = "show the menubar", group = "launcher"})
     awful.key({modkey},   "p", function()
-        awful.spawn.with_shell("rofi -show drun -show-icons &>> /tmp/rofi.log") end, 
+        awful.spawn.with_shell("~/.config/rofi/scripts/launcher_t5 &>> /tmp/rofi.log") end, 
         { description = "Execute Rofi drun prompt (Applications)", group = "launcher" }
     )
 )

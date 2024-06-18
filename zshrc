@@ -27,3 +27,4 @@ alias td='tmux detach'
 alias ta='tmux attach'
 
 PATH="$PATH":"$HOME/.local/bin/scripts/"
+export PATH=$HOME/.config/rofi/scripts:$PATH
