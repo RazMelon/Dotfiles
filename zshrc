@@ -25,6 +25,10 @@ alias spotify='cd ~/.cargo/bin && ./spotify_player'
 #tmux aliases
 alias td='tmux detach'
 alias ta='tmux attach'
-
+alias tmux='TERM=screen-256color tmux'
 PATH="$PATH":"$HOME/.local/bin/scripts/"
+<<<<<<< HEAD
 export PATH=$HOME/.config/rofi/scripts:$PATH
+=======
+alias fetch='sudo nerdfetch'
+>>>>>>> c6b2f59 (add changes)
