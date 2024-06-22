@@ -2,3 +2,5 @@ bat config at ~/.config/bat
 awesome folder at ~/.config/awesome
 and also at /usr/share/awesome
 move ~/.config/polybar to ~/dotfiles/polybar
+move ~/.config/alacritty to ~/dotfiles/alacritty
+move ~/.zshrc symlink to ~/dotfiles/zsh/zshrc

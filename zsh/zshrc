@@ -19,10 +19,10 @@ export CC=clang
 export CFLAGS="-fsanitize=integer -fsanitize=undefined -ggdb3 -O0 -std=c11 -Wall -Werror -Wextra -Wno-sign-compare -Wshadow"
 export LDLIBS="-lcrypt -lcs50 -lm"
 
-#spotify startup
+# spotify startup
 alias spotify='cd ~/.cargo/bin && ./spotify_player'
 
-#tmux aliases
+# tmux aliases
 alias td='tmux detach'
 alias ta='tmux attach'
 alias tmux='TERM=screen-256color tmux'
@@ -31,3 +31,6 @@ export PATH=$HOME/.config/rofi/scripts:$PATH
 alias fetch='sudo nerdfetch'
 export BAT_THEME="Catppuccin Macchiato"
 
+# zsh autocomplete with fzf
+autoload -U compinit; compinit
+source ~/dotfiles/fzf-tab/fzf-tab.plugin.zsh

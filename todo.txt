@@ -1,0 +1,13 @@
+todo for an install script
+
+fzf
+tmux
+exa
+nvim
+bat
+theme.sh
+
+polybar
+awesomewm
+picom jonaburg :( (okay it seems there's a list of dependencies, that is nice)
+

@@ -9,6 +9,12 @@ vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
+-- yank the word, put the word
+vim.keymap.set("n", "Y", "viwy")
+vim.keymap.set("n", "P", "viwp")
+-- execute the "lua Colors()" command quicker lmao i'm too lazy to figure 
+-- out how to move it to something that runs automatically
+vim.keymap.set("n", "<leader>c", ":lua Colors()")
 
 -- vim.keymap.set("n", "<leader>vwm", function()
 --     require("vim-with-me").StartVimWithMe()
