@@ -17,7 +17,8 @@ local hotkeys_popup = require("awful.hotkeys_popup")
 -- Enable hotkeys help widget for VIM and other apps
 -- when client with a matching name is opened:
 require("awful.hotkeys_popup.keys")
-
+-- set catppuccin macchiato palette (requires luarocks install of the color lib)
+--      local palette = require("catppuccin").mocha()
 -- Load Debian menu entries
 local debian = require("debian.menu")
 local has_fdo, freedesktop = pcall(require, "freedesktop")
@@ -54,7 +55,7 @@ beautiful.init(gears.filesystem.get_themes_dir() .. "razmelon/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "alacritty"
-editor = os.getenv("EDITOR") or "editor"
+editor = os.getenv("EDITOR") or "nvim"
 editor_cmd = terminal .. " -e " .. editor
 
 -- Default modkey.
@@ -87,9 +88,9 @@ awful.layout.layouts = {
 
 -- {{{ Menu
 -- Create a launcher widget and a main menu
-beautiful.menu_height=20
-beautiful.menu_width=180
-beautiful.menu_bg_normal="#066f71"
+beautiful.menu_height=30
+beautiful.menu_width=200
+beautiful.menu_bg_normal="palette.blue"
 beautiful.menu_bg_focus="#962b0b"
 beautiful.menu_fg_normal="#98a1aa"
 beautiful.menu_fg_focus="#98a1aa"
