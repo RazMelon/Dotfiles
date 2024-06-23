@@ -18,7 +18,8 @@ local hotkeys_popup = require("awful.hotkeys_popup")
 -- when client with a matching name is opened:
 require("awful.hotkeys_popup.keys")
 -- set catppuccin macchiato palette (requires luarocks install of the color lib)
---      local palette = require("catppuccin").mocha()
+-- package.path = package.path .. ';/usr/local/lib/luarocks/rocks-5.1/'
+-- local palette = require("catppuccin.macchiato")
 -- Load Debian menu entries
 local debian = require("debian.menu")
 local has_fdo, freedesktop = pcall(require, "freedesktop")

@@ -22,6 +22,8 @@ export LDLIBS="-lcrypt -lcs50 -lm"
 # spotify startup
 alias spotify='cd ~/.cargo/bin && ./spotify_player'
 
+#m720 triathlon on the desktop
+alias mouse='ltunify pair'
 # tmux aliases
 alias td='tmux detach'
 alias ta='tmux attach'
