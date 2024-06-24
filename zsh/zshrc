@@ -35,4 +35,5 @@ export BAT_THEME="Catppuccin Macchiato"
 
 # zsh autocomplete with fzf
 autoload -U compinit; compinit
+
 source ~/dotfiles/fzf-tab/fzf-tab.plugin.zsh
