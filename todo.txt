@@ -11,3 +11,6 @@ polybar
 awesomewm
 picom jonaburg :( (okay it seems there's a list of dependencies, that is nice)
 
+ltunify for mouse by dongle
+autotiling for i3
+sway (window manager)
