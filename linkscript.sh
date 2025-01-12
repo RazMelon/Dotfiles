@@ -15,4 +15,3 @@ rm -rf ~/.zshrc & ln -s ~/dotfiles/zsh/zshrc ~/.zshrc &
 rm -rf ~/.config/alacritty & ln -s ~/dotfiles/alacritty ~/.config/alacritty/ &
 # install fzf autocomplete for zsh
 git clone https://github.com/Aloxaf/fzf-tab ~/dotfiles/fzf-tab &
-

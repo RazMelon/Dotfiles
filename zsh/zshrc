@@ -9,6 +9,7 @@ alias zz='z -'
 alias tree='exa --tree'
 alias ls='exa'
 alias "ls -la"='exa -la'
+alias cat='batcat'
 fpath+=${ZDOTDIR:-~}/.zsh_functions
 
 # Created by `pipx` on 2024-06-05 23:56:03
@@ -37,3 +38,6 @@ export BAT_THEME="Catppuccin Macchiato"
 autoload -U compinit; compinit
 
 source ~/dotfiles/fzf-tab/fzf-tab.plugin.zsh
+export PATH="$PATH:/opt/nvim-linux64/bin"
+export PATH="$PATH:/opt/brave.com/bin"
+export PATH=$HOME/.local/bin:$PATH
