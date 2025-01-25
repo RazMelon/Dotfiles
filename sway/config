@@ -19,6 +19,7 @@ set $term alacritty
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
 set $menu rofi drun -show
+
 # dmenu_path | wmenu | xargs swaymsg exec --
 
 include /etc/sway/config-vars.d/*
@@ -72,7 +73,9 @@ output * bg ~/dotfiles/awesome/themes/razmelon/leaves.jpg fill
     bindsym $mod+Shift+c kill
 
     # Start your launcher
-    bindsym $mod+p exec $menu
+    bindsym $mod+p exec "~/.config/rofi/scripts/launcher_t5 &>> /tmp/rofi.log"
+
+    bindsym $mod+r exec "~/.config/rofi/scripts/launcher_t1 &>> /tmp/rofi.log"
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -197,7 +200,7 @@ mode "resize" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
-bindsym $mod+r mode "resize"
+bindsym $mod+ctrl+r mode "resize"
 
 #
 # Status Bar:
