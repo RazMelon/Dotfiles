@@ -8,7 +8,6 @@
        "2": "cyan"
    }
     },
-
 "display": {
     "separator": ": ",     // Separator between keys and values
     "color": {
