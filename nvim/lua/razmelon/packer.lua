@@ -25,13 +25,14 @@ return require('packer').startup(function(use)
     -- 		vim.cmd('colorscheme rose-pine')
 	-- end
     -- })
-	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
-	use('nvim-treesitter/playground')
+	-- use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+	-- use('nvim-treesitter/playground')
     -- use('theprimeagen/harpoon')
 	use('mbbill/undotree')
 	use('tpope/vim-fugitive')
     use('ThePrimeagen/vim-be-good')
     use('rstacruz/vim-closer')
+    use('m4xshen/autoclose.nvim')
 	use {
 		'VonHeikemen/lsp-zero.nvim',
 		branch = 'v3.x',

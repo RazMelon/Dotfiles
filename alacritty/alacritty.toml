@@ -9,9 +9,13 @@ padding.y = 10
 opacity = 0.95
 blur = false
 
-[font]
-normal.family = "JetBrains Mono Nerd Font"
+[font.normal]
+# family = "HurmitNerdFont"
+# style = "Regular"
+family = "VictorMonoNerdFont"
+style = "SemiBold"
 
+[font]
 size = 14
 
 [general]

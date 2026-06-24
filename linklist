@@ -1,6 +1,17 @@
 bat config at ~/.config/bat
+- batcat cache --build
 awesome folder at ~/.config/awesome
 and also at /usr/share/awesome
 move ~/.config/polybar to ~/dotfiles/polybar
 move ~/.config/alacritty to ~/dotfiles/alacritty
+- might have to troubleshoot the exact name of the font
 move ~/.zshrc symlink to ~/dotfiles/zsh/zshrc
+- source ~/.zshrc
+nvim - clone the packer repo to dotfiles/nvim
+
+USE 
+***
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+***
+to install packer, then go to packer.lua and ":so" and ":PackerSync"
