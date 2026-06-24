@@ -7,10 +7,10 @@
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
-        "sway/window",
+        // "sway/window",
         "sway/mode",
         "sway/scratchpad",
-        "custom/cava"
+        "custom/cava",
     ],
     "modules-center": [
         "sway/workspaces"
